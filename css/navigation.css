@@ -1,0 +1,102 @@
+/* Navigation Style */
+
+
+nav{
+    background: var(--jet);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 12vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+nav .nav-menu{
+    justify-content: space-between;
+}
+
+nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.8rem 0;
+}
+
+nav .toggle-collapse .toggle-icons i{
+    color: var(--white);
+    font-size: 20px;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+nav .nav-items{
+    font-family: var(--AdventPro);
+    display: flex;
+    margin: 0;
+}
+
+nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav .nav-items .nav-link:hover{
+    background-color: var(--darkSienna);
+}
+nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+nav .nav-brand a{
+    display: block;
+    font-size: 42px;
+    line-height: 1.2;
+    padding: 1rem 0;
+    font-family: var(--Amatic);
+    color: var(--white);
+}
+
+.nav-brand span{
+    color: var(--darkSienna);
+    font-family: var(--luckiestGuy);
+}
+
+nav .social{
+    padding: 1.8rem 0;
+    
+}
+
+.social a{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 20px;
+}
+
+
+/* Navigation Media Query */
+
+/* Viewport less than or equal to 750px */
+@media only screen and (max-width:750px){
+    nav .nav-menu, nav .nav-items{
+        flex-direction: column;
+    }
+
+    nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+@media only screen and (max-width:400px){
+    nav .toggle-collapse{
+        padding-right: 20px;
+    }
+}

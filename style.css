@@ -1,0 +1,108 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600&family=Amatic+SC:wght@700&family=Audiowide&family=Luckiest+Guy&family=Mirza:wght@500&family=Yatra+One&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+    --fbColor: #3B5998;
+    --twitterColor: #55ACEE;
+    --instagramColor: #8a3ab9;
+    --darkSienna: #410B13;
+    --jet: #433E3F;
+    --white: #ffffff;
+    --bgColor: #0f0f0f;
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --midnight: #104f55;
+
+    /* Gradient Color */
+    --strain: linear-gradient(to right, #433E3F, #94716b);
+    
+
+
+    /* Theme Font family */
+    --AdventPro: 'Advent Pro', sans-serif;
+    --Amatic: 'Amatic SC', cursive;
+    --luckiestGuy: 'Luckiest Guy', cursive;
+    --mirza: 'Mirza', cursive;
+    --audiowide: 'Audiowide', cursive;
+    --yatra: 'Yatra One', cursive;
+
+}
+
+/* Global Classes */
+
+p{
+    font-family: var(--AdventPro);
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+h1{
+    font-family: var(--audiowide);
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: var(--mirza);
+    font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: var(--yatra);
+    color: (var(--white));
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+.container{
+    margin: 0 5vw;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fa-facebook-square {
+    background: var(--fbColor);
+    color: white;
+    padding: .1rem;
+    border-radius: 6px;
+}
+
+.fa-twitter-square {
+    background: var(--twitterColor);
+    color: white;
+    padding: .1rem;
+    border-radius: 6px;
+}
+
+.fa-instagram-square {
+    background: var(--instagramColor);
+    color: white;
+    padding: .1rem;
+    border-radius: 6px;
+}
+
