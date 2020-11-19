@@ -5,7 +5,6 @@ main .site-title{
     height: 110vh;
     display: flex;
     justify-content: center;
-    background-repeat: no-repeat;
 }
 
 main .site-title .site-background{
