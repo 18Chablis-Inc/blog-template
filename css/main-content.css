@@ -5,6 +5,7 @@ main .site-title{
     height: 110vh;
     display: flex;
     justify-content: center;
+    background-repeat: no-repeat;
 }
 
 main .site-title .site-background{
@@ -217,4 +218,73 @@ main .post-content .post-title p{
 
 .site-content .sidebar .popular-post .post-title a{
     font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter{
+    padding-top: 10rem;
+
+}
+
+.site-content .sidebar .newsletter .form-element{
+    padding: .5rem 2rem;
+}
+
+.site-content .sidebar .newsletter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-family: var(--audiowide);
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--strain);
+}
+
+.site-content .sidebar .popular-tags{
+    padding: 5rem 0;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: var(--strain);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+}
+
+
+/* Viewport less than or equal 1130px */
+@media only screen and (max-width:1130px){
+    .site-content .post-content .post-image .post-info{
+        left: 2rem !important;
+        border-radius: 0% !important;
+        bottom: 1.2rem !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+    
+}
+
+@media only screen and (max-width:750px){
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    
+}
+
+/* Viewport less than or equal 520px */
+@media only screen and (max-width:520px){
+    main .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content .post-image .post-info{
+        display: none;
+    }
 }
