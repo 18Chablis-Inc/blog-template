@@ -103,8 +103,7 @@ footer .move-up span:hover{
     }
 
     footer .rights{
-        padding-right: .9rem;
-        padding-left: .9rem;
+        padding: 0 1.4rem;
     } 
 
     footer .rights h4{
